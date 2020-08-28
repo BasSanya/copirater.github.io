@@ -386,6 +386,9 @@ header .logo_img {
 	line-height: 40px;
 	margin-top: 20px;
 }
+.content_text a:hover {
+	background: #407070;
+}
 /*Footer, site map and contacts*/
 footer {
 	z-index: 3;
