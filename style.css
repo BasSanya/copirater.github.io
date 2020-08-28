@@ -1,0 +1,481 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+/*font-family: 'PT Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+/*Element of bachground*/
+.bg_top {
+	background: #637E92;
+	width: 100%;
+	height: 900px;
+	position: absolute;
+	top: 0;
+}
+.bg_bottom {
+	background-color: #76779B;
+	width: 100%;
+	height: 450px;
+	position: absolute;
+	margin-top: -450px;
+}
+/*Element of background, decorator*/
+.violet_round {
+	position: absolute;
+	z-index: 1;
+	top: 540px;
+}
+.dark_green_round {
+	position: absolute;
+	z-index: 1;
+	left: 950px;
+	top: 1140px;
+}
+.main_conteiner {
+	background-color: #E3E3DE;
+	width: 1140px;
+	min-height: 500px;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	margin-top: 70px;
+	position: relative;
+	z-index: 2;
+}
+
+header {
+	width: 100%;
+	display: inline-flex;
+	position: relative;
+	justify-content: space-between;
+	z-index: 2;
+}
+
+.green_block_top {
+	background-color: #749FAA;
+	width: 500px;
+	height: 300px;
+	top: 0;
+	right: 0;
+	position: absolute;
+}
+header .logo_img {
+	width: 365px;
+	margin-left: 100px;
+	margin-top: 30px;
+	
+}
+/*Right elements in header: search place, search button and menu */
+.conteiner_menu {
+	display: inline-flex;
+	align-items: center;
+	margin-right: 30px;
+}
+.search_place {
+	width: 170px;
+	height: 30px;
+	border: none;
+	background-color: #637E92;
+	color: #FDFDFE;
+	margin-right: 10px;
+}
+#search {
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.search_place {
+	padding-left: 10px;
+}
+.search_place::placeholder {
+	color: #FDFDFE;
+}
+.search_button {
+	width: 30px;
+	height: 30px;
+	border: none;
+	background-color: #637E92;
+	margin-right: 10px;
+}
+.search_button img {
+	padding: 5px;
+}
+.search_button img:hover {
+	padding: 3px;
+	width: 22px;
+	height: 22px;
+}
+.menu_button {
+	height: 30px;	
+}
+.menu_button:hover {
+	background-color: #637E92;
+}
+/*Text and photo from last post with work*/
+.main_post {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.main_post_text_block {
+	width: 350px;
+	height: 420px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 45px;
+	margin-left: 60px;
+}
+.main_post_text_block h2 {
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20;
+	margin-top: 50px;
+}
+.main_post_text_block p {
+	margin-top: 25px;
+	text-align: justify;
+	width: 300px;
+}
+.main_post_text_block a {
+	font-weight: bold;
+	color: #FDFDFE;
+	width: 100px;
+	height: 40px;
+	margin-top: 40px;
+	background-color: #76779B;
+	line-height: 40px;
+	text-align: center;
+}
+.main_post_text_block a:hover {
+	background-color: #4D4E6A;
+}
+
+/*Right main block with image*/
+.main_post_img {
+	width: 560px;
+	height: 440px;
+	margin-right: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.main_post_img img {
+	width: 100%;
+	position: relative;
+	z-index: 2;
+}
+.main_post_img a {
+	font-weight: bold;
+	color: #FDFDFE;
+	width: 150px;
+	background-color: #76779B;
+	line-height: 40px;
+	text-align: center;
+	margin-top: -20px;
+	z-index: 3;
+}
+.main_post_img a:hover {
+	background-color: #4D4E6A;
+}
+/*Block with description services which user can order*/
+.services {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.services h2 {
+	width: 100%;
+	text-align: center;
+	font-size: 50px;
+	margin-top: 60px;
+}
+.arrows {
+	width: 100%;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
+}
+.arrows img {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.services_content {
+	width: calc(100% - 80px);
+	display: inline-flex;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+.servic_block {
+	position: relative;
+	width: 300px;
+	height: 260px;
+	margin-left: 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	z-index: 2;
+}
+.service_bg {
+	width: 300px;
+	height: 240px;
+	background: #FDFDFE;
+}
+.service_bg h3 {
+	width: 180px;
+	height: 40px;
+	position: relative;
+	background: #76779B;
+	color: #FDFDFE;
+	text-align: center;
+	line-height: 40px;
+	margin-left: 100px;
+	margin-top: -90px;
+	z-index: 2;
+}
+.service_bg p {
+	font-family: 'Roboto', sans-serif;
+	width: 200px;
+	height: 60px;
+	font-size: 12px;
+	margin-top: 50px;
+	margin-left: 50px;
+	text-align: center;
+}
+.order_button {
+	display: block;
+	margin: auto;
+	margin-top: -20px;
+	width: 110px;
+	height: 40px;
+	background: #637E92;
+	color: #FDFDFE;
+	text-align: center;
+	line-height: 40px;
+}
+.order_button:hover {
+	background: #425461;
+}
+/*Block with main content, little preview of postand button for open full site with text*/
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.content h2 {
+	width: 100%;
+	height: 60px;
+	font-size: 50px;
+	margin-top: 30px;
+	text-align: center;
+}
+.content_block {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 30px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 20px;
+}
+.content_post {
+	width: 300px;
+	height: 400px;
+	margin-left: 40px;
+	background: #FDFDFE;
+	position: relative;
+	z-index: 3;
+}
+.content_post h3{
+	height: 20px;
+	letter-spacing: 4px;
+	font-size: 18px;
+	line-height: 20px;
+	text-align: center;
+	margin-top: 10px;
+}
+.content_post p {
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 280px;
+	height: 100px;
+	font-size: 12px;
+	text-align: justify;
+}
+.content_post a {
+	display: block;
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background: #76779B;
+	color: #FDFDFE;
+	margin: auto;
+}
+.content_post a:hover {
+	background-color: #4D4E6A;
+}
+/*Block with short description about author */
+.about_myself {
+	display: flex;
+}
+.photo_block {
+	width: 600px;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+.photo_block .green_side_block {
+	width: 300px;
+	height: 500px;
+	background: #3E5D65;
+}
+.photo_block img {
+	margin-left: -250px;
+	width: 500px;
+	height: 330px;
+}
+.text_block {
+	margin-left: 40px;
+}
+.green_block {
+	width: 400px;
+	height: 450px;
+	background: #749FAA;
+}
+.content_text {
+	width: 400px;
+	height: 450px;
+	background: #FDFDFE;
+	margin-left: 30px;
+	margin-top: -430px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.content_text h3 {
+	font-size: 36px;
+	margin-top: 40px;
+}
+.content_text p {
+	width: 300px;
+	height: 250px;
+	margin-top: 30px;
+	font-size: 12px;
+	text-align: justify;
+}
+.content_text a {
+	display: block;
+	width: 160px;
+	height: 40px;
+	background-color: #749FAA;
+	color: #FDFDFE;
+	font-size: 18px;
+	text-align: center;
+	line-height: 40px;
+	margin-top: 20px;
+}
+/*Footer, site map and contacts*/
+footer {
+	z-index: 3;
+	position: relative;
+	width: 1140px;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 0;
+	display: flex;
+	justify-content: space-between;
+}
+.left_bar {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-left: 30px;
+	height: 110px;
+	width: 380px;
+	margin-bottom: 20px;
+}
+.charters {
+	margin-left: 30px;
+	width: 110px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.charters h3 {
+	width: 100%;
+	font-size: 20px;
+	color: #FDFDFE;
+}
+.charters a {
+	display: block;
+	width: 100%;
+	margin-top: 5px;
+	color: #FDFDFE;
+	height: 15px;
+	font-size: 14px;
+	line-height: 15px;
+}
+.categories {
+	margin-left: 60px;
+	width: 150px;
+	height: 110px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.categories h3 {
+	width: 100%;
+	font-size: 20px;
+	color: #FDFDFE;
+}
+.categories a {
+	display: block;
+	width: 100%;
+	margin-top: 5px;
+	color: #FDFDFE;
+	height: 15px;
+	font-size: 14px;
+	line-height: 15px;
+}
+.right_bar {
+	margin-top: 20px;
+	margin-right: 20px;
+	width: 270px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.right_bar h3 {
+	color: #FDFDFE;
+	width: 100%;
+	height: 25px;
+	font-size: 20px;
+}
+.right_bar img {
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+}
+.mob_number {
+	height: 30px;
+	line-height: 30px;
+	color: #FDFDFE;
+	font-size: 20px;
+}
+.email {
+	height: 30px;
+	line-height: 30px;
+	color: #FDFDFE;
+	font-size: 20px;
+}
