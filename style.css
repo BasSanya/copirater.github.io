@@ -119,7 +119,7 @@ header .logo_img {
 	background-color: #637E92;
 }
 /*Media query for header*/
-@media (min-width: 867px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1440px) {
 	.main_conteiner {
 		width: 708px;
 	}
@@ -134,7 +134,7 @@ header .logo_img {
 		width: 350px;
 	}
 	.dark_green_round {
-		left: 677px;
+		left: 518px;
 	}
 }
 /*Text and photo from last post with work*/
@@ -208,7 +208,7 @@ header .logo_img {
 	background-color: #4D4E6A;
 }
 /*Media query for block Main post (second block)*/
-@media (min-width: 867px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1440px) {
 	.main_post {
 		flex-wrap: wrap;
 	}
@@ -312,7 +312,7 @@ header .logo_img {
 .order_button:hover {
 	background: #425461;
 }
-@media (min-width: 867px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1440px) {
 	.service_3 {
 		display: none;
 	}
@@ -375,7 +375,7 @@ header .logo_img {
 .content_post a:hover {
 	background-color: #4D4E6A;
 }
-@media (min-width: 867px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1440px) {
 	.post_3 {
 		display: none;
 	}
@@ -445,7 +445,7 @@ header .logo_img {
 .content_text a:hover {
 	background: #407070;
 }
-@media (min-width: 867px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1440px) {
 	.photo_block {
 		width: 100%;
 	}
@@ -557,7 +557,7 @@ footer {
 	color: #FDFDFE;
 	font-size: 20px;
 }
-@media (min-width: 867px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1440px) {
 	footer {
 		width: 708px;
 	}
