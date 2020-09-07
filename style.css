@@ -352,6 +352,7 @@ header .logo_img {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	position: relative;
 }
 .services h2 {
 	width: 100%;
@@ -367,22 +368,40 @@ header .logo_img {
 	align-items: center;
 	margin-top: 25px;
 }
-.arrows img {
-	margin-left: 5px;
-	margin-right: 5px;
+.arrows button {
+	background: transparent;
+	border: 0;
+	display: flex;
+	align-content: center;
+}
+.arrows button:hover {
+	cursor: pointer;
+}
+.arrows button img {
+	margin: 5px;
 }
 .services_content {
 	width: calc(100% - 80px);
-	display: inline-flex;
-	justify-content: space-around;
+	position: relative;
+	display: flex;
+	flex-wrap: nowrap;
 	margin-left: 40px;
 	margin-right: 40px;
+	overflow: hidden;
+}
+.slide {
+	position: relative;
+	display: flex;
+	flex-wrap: nowrap;
+	transition: all ease 1s;
+	left: 0;
 }
 .servic_block {
 	position: relative;
 	width: 300px;
 	height: 260px;
 	margin-top: 20px;
+	margin-left: 40px;
 	z-index: 2;
 }
 .service_bg {
@@ -426,13 +445,18 @@ header .logo_img {
 	background: #425461;
 }
 @media (max-width: 1440px) {
-	.service_3 {
-		display: none;
+	.servic_block {
+		margin-left: 14px;
 	}
 }
 @media (max-width: 768px) {
-	.service_2 {
-		display: none;
+	.servic_block {
+		margin-left: 0;
+	}
+	.services_content {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	.services h2 {
 		margin-top: 20px;
@@ -457,15 +481,24 @@ header .logo_img {
 }
 .content_block {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
 	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	margin-top: 30px;
 	margin-bottom: 70px;
+	overflow: hidden;
+}
+.slide_content {
+	position: relative;
+	display: flex;
+	flex-wrap: nowrap;
+	transition: all ease 1s;
+	left: 0;
 }
 .content_post {
 	width: 300px;
 	height: 400px;
+	margin-left: 40px;
 	background: #FDFDFE;
 	position: relative;
 	z-index: 3;
@@ -500,20 +533,23 @@ header .logo_img {
 	background-color: #4D4E6A;
 }
 @media (max-width: 1440px) {
-	.post_3 {
-		display: none;
+	.content_post {
+		margin-left: 14px;
 	}
 }
 @media (max-width: 768px) {
-	.post_2 {
-		display: none;
-	}
 	.content h2 {
 		margin-top: 20px;
 	}
+	.content_post {
+		margin-left: 0;
+	}
 	.content_block {
+		width: 100%;
 		margin-top: 10px;
 		margin-bottom: 20px;
+		margin-left: 0;
+		margin-right: 0;
 	}
 }
 /*Block with short description about author */
