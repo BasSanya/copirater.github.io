@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -38,7 +41,7 @@ font-family: 'Roboto', sans-serif;
 /*Element of background, decorator*/
 .violet_round {
 	position: absolute;
-	z-index: 1;
+	z-index: 0;
 	top: 540px;
 }
 .dark_green_round {
@@ -192,6 +195,14 @@ header .logo_img {
 	}
 }
 @media (max-width: 768px) {
+	.drop_menu {
+		width: 300px;
+		margin-left: -240px;
+		transition: 0.7s opacity;
+	}
+	.drop_menu li a {
+		text-align: center;
+	}
 	.bg_top {
 		height: 200px;
 	}
@@ -246,7 +257,7 @@ header .logo_img {
 	margin-top: 45px;
 	margin-left: 60px;
 	position: relative;
-	z-index: 2;
+	z-index: 1;
 }
 .main_post_text_block h2 {
 	width: 100%;
@@ -678,7 +689,7 @@ footer {
 	margin-bottom: 0;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: top;
 	flex-wrap: wrap;
 }
 .left_bar {
