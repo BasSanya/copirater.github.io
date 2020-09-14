@@ -46,14 +46,14 @@ font-family: 'Roboto', sans-serif;
 }
 .dark_green_round {
 	position: absolute;
-	z-index: 1;
+	z-index: 0;
 	left: 950px;
 	top: 1140px;
 }
 .main_conteiner {
 	background-color: #E3E3DE;
 	width: 1140px;
-	min-height: 500px;
+	min-height: 800px;
 	align-items: center;
 	justify-content: center;
 	margin: auto;
@@ -292,11 +292,11 @@ header .logo_img {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	z-index: 1;
 }
 .main_post_img img {
 	width: 100%;
 	position: relative;
-	z-index: 1;
 }
 .main_post_img a {
 	font-weight: bold;
@@ -789,4 +789,54 @@ footer {
 	.right_bar {
 		margin: auto;
 	}
+}
+
+/*Page About me */
+.violet_round {
+	position: absolute;
+	z-index: 0;
+	top: 240px;
+}
+.dark_green_round {
+	position: absolute;
+	left: 950px;
+	top: 400px;
+}
+.about_me_page {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.about_me_text {
+	width: 50%;
+	z-index: 1;
+}
+.about_me_text h1 {
+	width: 100%;
+	text-align: center;
+}
+.about_me_text p {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 20px;
+}
+.about_me_photo {
+	width: 50%;
+	z-index: 1;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.about_me_photo img {
+	width: 500px;
+	height: 330px;
+}
+.about_me_text_cont {
+	margin-left: 20px;
+	margin-right: 20px;
+	z-index: 1;
+	font-size: 20px;
 }
