@@ -814,6 +814,12 @@ footer {
 	justify-content: space-around;
 	z-index: 1;
 }
+.head_title {
+	width: 500px;
+	height: 300px;
+	background-color: #749FAA;
+	opacity: 0.5;
+}
 .for_margin {
 	margin-top: 40px;
 	margin-left: 40px;
