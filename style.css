@@ -81,7 +81,7 @@ header .logo_img {
 	width: 365px;
 	margin-left: 100px;
 	margin-top: 30px;
-	
+	margin-bottom: 20px;
 }
 
 /*Right elements in header: search place, search button and menu */
@@ -689,7 +689,7 @@ footer {
 	margin-bottom: 0;
 	display: flex;
 	justify-content: space-between;
-	align-items: top;
+	align-items: stretch;
 	flex-wrap: wrap;
 }
 .left_bar {
@@ -792,29 +792,23 @@ footer {
 }
 
 /*Page About me */
-.violet_round {
-	position: absolute;
-	z-index: 0;
-	top: 240px;
+.fix {
+	position: fixed;
 }
-.dark_green_round {
-	position: absolute;
-	left: 950px;
-	top: 400px;
+.bg_violet {
+	background: #76779B;
 }
 .photo_top {
 	width: 100%;
-	height: 450px;
 	overflow: hidden;
 }
 .photo_top img {
-	margin-top: -100px;
-	width: 1140px;
-	height: auto;
+	width: 100%;
+	position: fixed;
 	z-index: 0;
 }
 .about_me_page {
-	margin-top: -200px;
+	margin-top: 300px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
