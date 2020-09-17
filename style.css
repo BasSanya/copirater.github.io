@@ -66,7 +66,7 @@ header {
 	display: inline-flex;
 	position: relative;
 	justify-content: space-between;
-	z-index: 2;
+	z-index: 3;
 }
 
 .green_block_top {
@@ -196,7 +196,7 @@ header .logo_img {
 }
 @media (max-width: 768px) {
 	.drop_menu {
-		width: 300px;
+		width: 100%;
 		margin-left: -240px;
 		transition: 0.7s opacity;
 	}
@@ -815,10 +815,30 @@ footer {
 	z-index: 1;
 }
 .head_title {
-	width: 500px;
-	height: 300px;
+	width: 40%;
+	min-height: 300px;
 	background-color: #749FAA;
-	opacity: 0.5;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	z-index: 2;
+	border: solid 2px #FDFDFE;
+}
+.head_title h1 {
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	font-size: 60px;
+	color: #FDFDFE;
+}
+.head_title p {
+	width: 100%;
+	padding: 30px;
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 22px;
+	color: #FDFDFE;
 }
 .for_margin {
 	margin-top: 40px;
@@ -829,17 +849,9 @@ footer {
 .about_me_text {
 	width: 80%;
 	z-index: 1;
-	border-radius: 70px;
+	margin-top: 150px;
 	background-color: #749FAA;
 	margin-bottom: 50px;
-}
-.about_me_text h1 {
-	width: 100%;
-	height: 60px;
-	text-align: center;
-	line-height: 60px;
-	font-size: 35px;
-	color: #FDFDFE;
 }
 .about_me_text p {
 	width: 100%;
