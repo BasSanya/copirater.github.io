@@ -196,7 +196,7 @@ header .logo_img {
 }
 @media (max-width: 768px) {
 	.drop_menu {
-		width: 100%;
+		width: 300px;
 		margin-left: -240px;
 		transition: 0.7s opacity;
 	}
@@ -795,7 +795,7 @@ footer {
 .fix {
 	position: fixed;
 }
-.bg_violet {
+.bg_header {
 	background: #76779B;
 }
 .photo_top {
@@ -808,7 +808,7 @@ footer {
 	z-index: 0;
 }
 .about_me_page {
-	margin-top: 300px;
+	margin-top: 240px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -849,7 +849,7 @@ footer {
 .about_me_text {
 	width: 80%;
 	z-index: 1;
-	margin-top: 150px;
+	margin-top: 160px;
 	background-color: #749FAA;
 	margin-bottom: 50px;
 }
@@ -859,17 +859,52 @@ footer {
 	font-size: 20px;
 	color: #FDFDFE;
 }
-.about_me_photo {
-	width: 256px;
-	height: 342px;
-	z-index: 1;
-	float: left;
-	overflow: hidden;
-	margin-right: 20px;
-
+@media (max-width: 1440px) {
+	.bg_header a img {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 }
-.about_me_photo img {
-	top: 0;
-	width: 100%;
-	position: relative;
+@media (max-width: 768px) {
+	.photo_top img {
+		height: 100%;
+		width: auto;
+	}
+	.about_me_page {
+		margin-top: 150px;
+	}
+	.about_me_photo {
+		margin-right: 0;
+	}
+	.about_me_text {
+		margin-top: 80px;
+	}
+	.head_title {
+		width: 60%;
+		min-height: 80px;
+	}
+	.head_title h1 {
+		font-size: 40px;
+	}
+	.head_title p {
+		font-size: 18px;
+	}
+	.about_me_text p {
+		font-size: 16px;
+	}
+	.for_margin {
+		margin-top: 20px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		border-left: 20px;
+
+	}
+}
+@media (max-width: 440px) {
+	.about_me_page {
+		margin-top: 90px;
+	}
+	.about_me_text p img {
+		max-width: 300px;
+	}
 }
